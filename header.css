@@ -1,9 +1,28 @@
-#header-title {
-    background-color: gray;
+#header {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#header-backImg {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: blur(5px);
+    top: 0;
+    left: 0;
+}
+
+#header-title_h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#header-title_p {
+    font-size: 25px;
 }
 
 #header-document_div {
@@ -13,11 +32,19 @@
 }
 
 #header-document_div span{
-    margin-bottom: 10px;
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 #header-document_div-link a {
-    background-color: skyblue;
-    padding: 5px;
+    padding: 12px;
     border-radius: 10px;
+}
+
+#header-document_div-link a:last-child {
+    margin-left: 15px;
+}
+#header-document_div-link a:hover {
+    background-color: rgba(97, 218, 251, 0.5);
 }

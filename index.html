@@ -9,27 +9,30 @@
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="outline.css" />
+    <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="characteristic.css" />
     <script src="index.js"></script>
   </head>
   <body>
-    <header id="header-title">
-      <canvas
-        id="myCanvas"
-        width="450"
-        height="200"
-        style="background-color: #000000"
-      ></canvas>
-      <h1>React</h1>
-      <p>
-        Lorem, ipsum eligendi um odit eius at veritatis sequi aperiam totam
-        repellat odio eaque.
+    <nav id="nav">
+      <span id="nav-title">React</span>
+      <ul id="nav-list">
+        <li><a href="#" class="nav-list_li">개요</a></li>
+        <li><a href="#" class="nav-list_li">특징</a></li>
+        <li><a href="#" class="nav-list_li">예문</a></li>
+        <li><a href="#" class="nav-list_li">개발자</a></li>
+      </ul>
+    </nav>
+    <header id="header">
+      <h1 id="header-title_h1">React</h1>
+      <p id="header-title_p">
+        사용자 인터페이스를 만들기 위한 JavaScript 라이브러리
       </p>
       <div id="header-document_div">
         <span>공식 문서</span>
         <div id="header-document_div-link">
-          <a href="https://reactjs.org/">English</a>
-          <a href="https://ko.reactjs.org/">한국어</a>
+          <a href="https://reactjs.org/" target="_blank">English</a>
+          <a href="https://ko.reactjs.org/" target="_blank">한국어</a>
         </div>
       </div>
     </header>
@@ -72,7 +75,7 @@
         <div class="characteristic-div">
           <h4 class="characteristic-title">✅ 선언형</h4>
           <div class="characteristic-division"></div>
-          <div class="characteristic-sub right">
+          <div class="characteristic-sub">
             <p class="characteristic-sub_p">
               React는 상호작용이 많은 UI를 만들 때 생기는 어려움을 줄여준다.
               <br />
@@ -84,7 +87,7 @@
           </div>
         </div>
         <div class="characteristic-div">
-          <div class="characteristic-sub left">
+          <div class="characteristic-sub">
             <p class="characteristic-sub_p">
               React는 상호작용이 많은 UI를 만들 때 생기는 어려움을 줄여준다.
               <br />
@@ -99,17 +102,19 @@
           <h4 class="characteristic-title">✅ 컴포너트 기반</h4>
         </div>
       </section>
+      <canvas
+        id="myCanvas"
+        width="450"
+        height="200"
+        style="background-color: #fff"
+      ></canvas>
     </main>
     <!-- canavas script -->
     <script>
-      var header = document.getElementById("header-title");
       var canvas = document.getElementById("myCanvas");
       var context = canvas.getContext("2d");
 
-      console.dir(header);
-      console.log(header.offsetHeight);
       canvas.width = window.innerWidth;
-      canvas.height = header.offsetHeight;
       // Draw the ellipse
       context.beginPath();
       context.strokeStyle = "#61DAFB";
