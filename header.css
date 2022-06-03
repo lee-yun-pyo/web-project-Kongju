@@ -1,0 +1,23 @@
+#header-title {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#header-document_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-document_div span{
+    margin-bottom: 10px;
+}
+
+#header-document_div-link a {
+    background-color: skyblue;
+    padding: 5px;
+    border-radius: 10px;
+}

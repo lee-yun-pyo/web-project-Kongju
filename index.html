@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Project</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="outline.css" />
+    <link rel="stylesheet" href="characteristic.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header id="header-title">
+      <canvas
+        id="myCanvas"
+        width="450"
+        height="200"
+        style="background-color: #000000"
+      ></canvas>
+      <h1>React</h1>
+      <p>
+        Lorem, ipsum eligendi um odit eius at veritatis sequi aperiam totam
+        repellat odio eaque.
+      </p>
+      <div id="header-document_div">
+        <span>공식 문서</span>
+        <div id="header-document_div-link">
+          <a href="https://reactjs.org/">English</a>
+          <a href="https://ko.reactjs.org/">한국어</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h3 class="subtitles">Outline</h3>
+      <ul id="outline-list">
+        <li class="outline-list_li">
+          <img class="outline-img" src="screenshot/company.png" alt="company" />
+          <div class="outline-list_li-text">
+            <h3>많은 회사들이 사용</h3>
+            <p>글로벌 기업이 사용</p>
+          </div>
+        </li>
+        <li class="outline-list_li">
+          <img
+            class="outline-img"
+            src="screenshot/facebook.png"
+            alt="company"
+          />
+          <div class="outline-list_li-text">
+            <h3>페북이 만듦</h3>
+            <p>페북이 만들고 페북이 웹사이트 이걸로 다시 만듦</p>
+          </div>
+        </li>
+        <li class="outline-list_li">
+          <img
+            class="outline-img"
+            src="screenshot/community.png"
+            alt="company"
+          />
+          <div class="outline-list_li-text">
+            <h3>매우 큰 커뮤니티</h3>
+            <p>리액트는 js랑 유사함</p>
+          </div>
+        </li>
+      </ul>
+      <br />
+      <section>
+        <h3 class="subtitles">React 특징</h3>
+        <div class="characteristic-div">
+          <h4 class="characteristic-title">✅ 선언형</h4>
+          <div class="characteristic-division"></div>
+          <div class="characteristic-sub right">
+            <p class="characteristic-sub_p">
+              React는 상호작용이 많은 UI를 만들 때 생기는 어려움을 줄여준다.
+              <br />
+              애플리케이션의 각 상태에 대한 간단한 뷰만 설계하면 React는
+              데이터가 변경됨에 따라 적절한 컴포넌트만 효율적으로 갱신하고
+              렌더링한다. <br />즉, 선언형 뷰는 코드를 예측 가능하고 디버그하기
+              쉽게 만들어 준다.
+            </p>
+          </div>
+        </div>
+        <div class="characteristic-div">
+          <div class="characteristic-sub left">
+            <p class="characteristic-sub_p">
+              React는 상호작용이 많은 UI를 만들 때 생기는 어려움을 줄여준다.
+              <br />
+              스스로 상태를 관리하는 캡슐화된 컴포넌트를 만들 수 있다. 그리고
+              이를 조합해 복잡한 UI를 만들 수 있다. 컴포넌트 로직은 템플릿이
+              아닌 JavaScript로 작성된다. 따라서 다양한 형식의 데이터를 앱
+              안에서 손쉽게 전달할 수 있고, DOM과는 별개로 상태를 관리할 수
+              있다.
+            </p>
+          </div>
+          <div class="characteristic-division"></div>
+          <h4 class="characteristic-title">✅ 컴포너트 기반</h4>
+        </div>
+      </section>
+    </main>
+    <!-- canavas script -->
+    <script>
+      var header = document.getElementById("header-title");
+      var canvas = document.getElementById("myCanvas");
+      var context = canvas.getContext("2d");
+
+      console.dir(header);
+      console.log(header.offsetHeight);
+      canvas.width = window.innerWidth;
+      canvas.height = header.offsetHeight;
+      // Draw the ellipse
+      context.beginPath();
+      context.strokeStyle = "#61DAFB";
+      context.lineWidth = 6;
+      context.ellipse(100, 100, 25, 75, Math.PI / 6, 0, 2 * Math.PI);
+      context.stroke();
+
+      context.beginPath();
+      context.ellipse(100, 100, 25, 75, -Math.PI / 6, 0, 2 * Math.PI);
+      context.stroke();
+
+      context.beginPath();
+      context.ellipse(100, 100, 25, 75, Math.PI / 2, 0, 2 * Math.PI);
+      context.stroke();
+
+      /* 가운데 작은 원 */
+      context.beginPath();
+      context.arc(100, 100, 10, 0, 2 * Math.PI);
+      context.fillStyle = "#61DAFB";
+      context.strokeStyle = "#61DAFB";
+      context.fill();
+      context.lineWidth = 3;
+      context.stroke();
+
+      /* React font */
+      context.font = "90px Gothic";
+      context.fillStyle = "#61DAFB";
+      context.fillText("React", 200, 135);
+    </script>
+  </body>
+</html>

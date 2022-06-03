@@ -1,0 +1,43 @@
+.characteristic-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 30px 30px 25px;
+    padding: 20px;
+}
+.characteristic-div:hover {
+    
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        border-radius: 40px;
+}
+
+.characteristic-title {
+    font-size: 25px;
+    width: 50%;
+    text-align: center;
+}
+
+.characteristic-sub {
+    width: 50%;
+    /* margin: 20px; */
+}
+
+.characteristic-division {
+    background-color:#61DAFB;
+    height: 200px;
+    width: 2px;
+    margin: 0 20px;
+    
+}
+/* .right {
+    border-left: 2px solid #61DAFB;
+    padding-left: 25px;
+}
+.left {
+    border-right: 2px solid #61DAFB;
+    padding-right: 25px;
+} */
+
+.characteristic-sub_p {
+    font-size: 20px;
+}

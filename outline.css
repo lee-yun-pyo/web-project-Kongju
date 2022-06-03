@@ -1,0 +1,32 @@
+#outline-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#outline-list li p {
+    font-size: 15px;
+}
+
+.outline-list_li {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.outline-list_li:hover {
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.3);
+}
+
+.outline-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 30%;
+    margin-right: 20px;
+}
+
