@@ -17,6 +17,7 @@
     padding: 20px;
     width: 300px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .outline-list_li:hover {
