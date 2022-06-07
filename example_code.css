@@ -1,0 +1,12 @@
+#example-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content:center;
+}
+.example-img {
+    width: auto;
+    height: 300px;
+    /* border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px; */
+}

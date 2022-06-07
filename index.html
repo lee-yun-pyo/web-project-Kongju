@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="outline.css" />
     <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="example_code.css" />
     <link rel="stylesheet" href="characteristic.css" />
-    <script src="index.js"></script>
   </head>
   <body>
     <nav id="nav">
@@ -24,7 +24,7 @@
       </ul>
     </nav>
     <header id="header">
-      <h1 id="header-title_h1">React</h1>
+      <h1 title="React" id="header-title_h1">React</h1>
       <p id="header-title_p">
         사용자 인터페이스를 만들기 위한 JavaScript 라이브러리
       </p>
@@ -102,6 +102,19 @@
           <h4 class="characteristic-title">✅ 컴포너트 기반</h4>
         </div>
       </section>
+      <section>
+        <h3 class="subtitles">React 예제 코드</h3>
+        <div id="example-div">
+          <h4 class="characteristic-title">✅ 컴포너트 기반</h4>
+          <img
+            src="screenshot/netflix.png"
+            alt="code"
+            id="example-img"
+            class="example-img"
+          />
+          <img src="screenshot/code.png" alt="code" class="example-img" />
+        </div>
+      </section>
       <canvas
         id="myCanvas"
         width="450"
@@ -109,6 +122,8 @@
         style="background-color: #fff"
       ></canvas>
     </main>
+    <script src="index.js"></script>
+
     <!-- canavas script -->
     <script>
       var canvas = document.getElementById("myCanvas");
