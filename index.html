@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="example_code.css" />
     <link rel="stylesheet" href="characteristic.css" />
+    <link rel="stylesheet" href="footer.css" />
   </head>
   <body>
     <nav id="nav">
@@ -115,13 +116,19 @@
           <img src="screenshot/code.png" alt="code" class="example-img" />
         </div>
       </section>
+    </main>
+    <footer>
       <canvas
         id="myCanvas"
         width="450"
         height="200"
-        style="background-color: #fff"
+        style="background-color: #e5e5e5"
       ></canvas>
-    </main>
+      <div class="clock">
+        <p class="clock-p">현재 시간</p>
+        <p class="clock-text">00:00:00</p>
+      </div>
+    </footer>
     <script src="index.js"></script>
 
     <!-- canavas script -->
@@ -129,7 +136,6 @@
       var canvas = document.getElementById("myCanvas");
       var context = canvas.getContext("2d");
 
-      canvas.width = window.innerWidth;
       // Draw the ellipse
       context.beginPath();
       context.strokeStyle = "#61DAFB";
